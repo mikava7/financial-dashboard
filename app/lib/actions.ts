@@ -11,6 +11,7 @@ const FormSchema = z.object({
   status: z.enum(["pending", "paid"]),
   date: z.string(),
 });
+
 const CreateInvoice = FormSchema.omit({ id: true, date: true });
 
 export async function createInvoice(formData: FormData) {
