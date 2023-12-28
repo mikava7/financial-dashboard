@@ -1,9 +1,11 @@
+"use server";
+
 import { z } from "zod";
 import { sql } from "@vercel/postgres";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-// import { signIn } from '@/auth';
-// import { AuthError } from 'next-auth';
+import { signIn } from "@/auth";
+import { AuthError } from "next-auth";
 
 const FormSchema = z.object({
   id: z.string(),
@@ -24,7 +26,6 @@ const UpdateInvoice = FormSchema.omit({ date: true, id: true });
 
 // This is temporary
 export type State = {
-  prevState?: State;
   errors?: {
     customerId?: string[];
     amount?: string[];
@@ -108,16 +109,32 @@ export async function updateInvoice(
 }
 
 export async function deleteInvoice(id: string) {
-  // throw new Error("Failed to Delete Invoice");
+  // throw new Error('Failed to Delete Invoice');
 
   try {
-    await sql`
-    DELETE FROM invoices WHERE id = ${id}`;
-
+    await sql`DELETE FROM invoices WHERE id = ${id}`;
     revalidatePath("/dashboard/invoices");
+    return { message: "Deleted Invoice" };
   } catch (error) {
-    return {
-      message: "Database Error: Failed to Delete Invoice.",
-    };
+    return { message: "Database Error: Failed to Delete Invoice." };
+  }
+}
+
+export async function authenticate(
+  prevState: string | undefined,
+  formData: FormData
+) {
+  try {
+    await signIn("credentials", formData);
+  } catch (error) {
+    if (error instanceof AuthError) {
+      switch (error.type) {
+        case "CredentialsSignin":
+          return "Invalid credentials.";
+        default:
+          return "Something went wrong.";
+      }
+    }
+    throw error;
   }
 }

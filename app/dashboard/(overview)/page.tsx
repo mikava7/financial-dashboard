@@ -1,6 +1,6 @@
-import { Card } from "../cards";
-import RevenueChart from "../revenue-chart";
-import LatestInvoices from "../latest-invoices";
+import { Card } from "../../ui/dashboard/cards";
+import RevenueChart from "../../ui/dashboard/revenue-chart";
+import LatestInvoices from "../../ui/dashboard/latest-invoices";
 import { lusitana } from "@/app/ui/fonts";
 // import { fetchCardData } from "../../lib/data";
 import { Suspense } from "react";
@@ -9,7 +9,7 @@ import {
   LatestInvoicesSkeleton,
   CardsSkeleton,
 } from "@/app/ui/skeletons";
-import CardWrapper from "../cards";
+import CardWrapper from "../../ui/dashboard/cards";
 export default async function Page() {
   return (
     <main>

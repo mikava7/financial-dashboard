@@ -1,8 +1,8 @@
-import { generateYAxis } from "../lib/utils";
+import { generateYAxis } from "../../lib/utils";
 import { CalendarIcon } from "@heroicons/react/24/outline";
-import { lusitana } from "../ui/fonts";
-import { Revenue } from "../lib/definition";
-import { fetchRevenue } from "../lib/data";
+import { lusitana } from "../fonts";
+import { Revenue } from "../../lib/definition";
+import { fetchRevenue } from "../../lib/data";
 // This component is representational only.
 // For data visualization UI, check out:
 // https://www.tremor.so/
