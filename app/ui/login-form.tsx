@@ -27,6 +27,9 @@ export default function LoginForm() {
               htmlFor="email"
             >
               Email
+              <span className="text-gray-600">
+                (Testing: user@nextmail.com)
+              </span>
             </label>
             <div className="relative">
               <input
@@ -46,6 +49,7 @@ export default function LoginForm() {
               htmlFor="password"
             >
               Password
+              <span className="text-gray-600"> (Testing: 123456)</span>
             </label>
             <div className="relative">
               <input

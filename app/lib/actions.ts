@@ -26,12 +26,13 @@ const UpdateInvoice = FormSchema.omit({ date: true, id: true });
 
 // This is temporary
 export type State = {
+  message?: string | null;
+
   errors?: {
     customerId?: string[];
     amount?: string[];
     status?: string[];
   };
-  message?: string | null;
 };
 
 export async function createInvoice(prevState: State, formData: FormData) {

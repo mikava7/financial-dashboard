@@ -2,7 +2,7 @@ import { Card } from "../../ui/dashboard/cards";
 import RevenueChart from "../../ui/dashboard/revenue-chart";
 import LatestInvoices from "../../ui/dashboard/latest-invoices";
 import { lusitana } from "@/app/ui/fonts";
-// import { fetchCardData } from "../../lib/data";
+import { fetchCardData } from "../../lib/data";
 import { Suspense } from "react";
 import {
   RevenueChartSkeleton,
@@ -10,6 +10,11 @@ import {
   CardsSkeleton,
 } from "@/app/ui/skeletons";
 import CardWrapper from "../../ui/dashboard/cards";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dashboard | Acme Dashboard",
+};
 export default async function Page() {
   return (
     <main>
