@@ -49,7 +49,7 @@ export default function LoginForm() {
               htmlFor="password"
             >
               Password
-              <span className="text-gray-600"> (Testing: 123456)</span>
+              <span className="text-gray-600"> ( Testing: 123456)</span>
             </label>
             <div className="relative">
               <input
