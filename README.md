@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Tutorial Source
 This project was created by following the official Next.js tutorial available on the Next.js website. The tutorial provides a comprehensive guide to building web applications with Next.js, and I highly recommend checking it out for an in-depth learning experience
 
-Open [Learn Next.js] (https://nextjs.org/learn) to see the tutorial.
+Open [Learn Next.js](https://nextjs.org/learn) to see the tutorial.
 
 Open [financial-dashboard](https://financial-dashboard-git-main-iraklis-projects-2a13912e.vercel.app/) with your browser to see the result.
 
