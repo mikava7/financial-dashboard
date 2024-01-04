@@ -1,36 +1,24 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Tutorial Source
+This project was created by following the official Next.js tutorial available on the Next.js website. The tutorial provides a comprehensive guide to building web applications with Next.js, and I highly recommend checking it out for an in-depth learning experience
 
-First, run the development server:
+[Learn Next.js] (https://nextjs.org/learn)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [financial-dashboard](https://financial-dashboard-git-main-iraklis-projects-2a13912e.vercel.app/) with your browser to see the result.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Learning Journey
+🚀 Exciting News! I've recently completed the Next.js dashboard course, and this project is the result of that journey. Key features I loved and implemented in this project include:
 
-To learn more about Next.js, take a look at the following resources:
+App Router - File Based Routing System: Next.js simplifies navigation with an intuitive file-based routing system. Check out the improved structure in the pages directory!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Automatic Code Splitting and Prefetching: Experience lightning-fast performance with Next.js's automatic code splitting and prefetching. Only load what's needed, when it's needed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Image and Font Optimization: Forget manual optimizations—Next.js takes care of image and font optimization for improved performance without the extra effort.
 
-## Deploy on Vercel
+Server Components for Data Fetching: Embrace server components for seamless server-side data fetching, leading to better performance and improved SEO.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Static Rendering and Dynamic Rendering: Choose between static and dynamic rendering for the flexibility your project needs. Optimize for static content or leverage dynamic rendering for real-time updates.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
